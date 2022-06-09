@@ -9,6 +9,6 @@ Each Chapter generally consists of the following structure :
  - Definition in Simple English
  - Followed by a Simple Example
  - Related Properties, Points & Notes if any
- - Ending the chapter with some Solved Exercises
+ - Some Solved Exercises
 
 Disclaimer : These notes are primarily based on Indian NCERT math text books, classes 9 to 12.
