@@ -52,9 +52,9 @@ We denote matrices with capital letters. In the above matrix $A$, the horizontal
 
 \subsection{Order of a Matrix}
 \begin{displayquote}
-\textbf{ Definition : A matrix having $m$ rows and $n$ columns is said to have order $m$ x $n$, read as ``m by n" matrix.}
+\textbf{ Definition : A matrix having $m$ rows and $n$ columns is said to have order $m \times n$, read as ``m by n" matrix.}
 \end{displayquote}
-In the general a $m$ x $n$ matrix has the following representation :
+In the general a $m \times n$ matrix has the following representation :
 \begin{displaymath}
 X = \begin{bmatrix}
 a_{11} & a_{12} & a_{13} & ... & a_{1n}\\
@@ -65,9 +65,9 @@ a_{41} & a_{42} & a_{43} & ... & a_{4n}\\
 .\\
 .\\
 a_{m1} & a_{m2} & a_{m3} & ... & a_{mn}
-\end{bmatrix}
+\end{bmatrix}_{m \times n}
 \end{displaymath}
-So, here we see that $X$ is a matrix of order $m$ x $n$. The number of elements in an $m$ x $n$ matrix will obviously be equal to $m$ multiplied by $n$.\\
+So, here we see that $X$ is a matrix of order $m \times n$. The number of elements in an $m \times n$ matrix will obviously be equal to $m$ multiplied by $n$.\\
 The individual elements of the matrix are represented by $a$, where $a_{ij}$ refers to the element lying in the $i^{th}$ row and $j^{th}$ column.\\
 \textbf{For example}, \\
 $a_{43}$ is an element of $X$ lying in the $4^{th}$ row and $3^{rd}$ column.
@@ -80,7 +80,7 @@ $a_{43}$ is an element of $X$ lying in the $4^{th}$ row and $3^{rd}$ column.
 \textbf{Definition : A matrix is said to be a column matrix if it has only one column.}
 \end{displayquote}
 \textbf{For example},\\
-The following is a column matrix of order 3 x 1 : 
+The following is a column matrix of order $3 \times 1$ : 
 \begin{displaymath}
 A = \begin{bmatrix}
 1 \\
@@ -94,7 +94,7 @@ A = \begin{bmatrix}
 \textbf{Definition : A matrix is said to be a row matrix if it has only one row.}
 \end{displayquote}
 \textbf{For example},\\
-The following is said to be a row matrix of order 1 x 3 : 
+The following is said to be a row matrix of order $1 \times 3$ : 
 \begin{displaymath}
 A = \begin{bmatrix}
 1 & 2 & 3\\
@@ -289,7 +289,7 @@ If
  A = \begin{bmatrix}
 1 & -1 & 2\\
 0 & 3 & 4
-\end{bmatrix}_{2 \textnormal{x} 3}
+\end{bmatrix}_{2 \times 3}
 \end{displaymath} 
 And 
 \begin{displaymath}
@@ -297,16 +297,16 @@ B = \begin{bmatrix}
 2 & 7\\
 -1 & 1\\
 5 & -4
-\end{bmatrix}_{3 \textnormal{x} 2}
+\end{bmatrix}_{3 \times 2}
 \end{displaymath}
 $\Rightarrow$ Then, firstly product $AB$ is defined as number of columns of $A$ is same as the number of rows of $B$.\\
-$\Rightarrow$ Secondly, the resultant matrix $C$ has order 2 x 2, given by the number of rows of $A$ and number of columns of $B$.\\
+$\Rightarrow$ Secondly, the resultant matrix $C$ has order $2 \times 2$, given by the number of rows of $A$ and number of columns of $B$.\\
 $\Rightarrow$ Finally, the resultant matrix can be written as : 
 \begin{displaymath}
 AB = C = \begin{bmatrix}
 c_{11} & c_{12}\\
 c_{21} & c_{22}
-\end{bmatrix}_{2 \textnormal{x} 2}
+\end{bmatrix}_{2 \times 2}
 \end{displaymath}
 Where the elements $c_{ij}$ of $C$ can be computed as specified in the definition above.\\
 $\Rightarrow$ For instance, to calculate $c_{21}$, we take the second row of $A$ and the first column of $B$, multiply their corresponding elements and take the sum. The elements of $C$ are computed accordingly and shown below for illustration :  
@@ -319,7 +319,7 @@ Therefore,
 AB = C = \begin{bmatrix}
 13 & -2\\
 17 & -13
-\end{bmatrix}_{2 \textnormal{x} 2}
+\end{bmatrix}_{2 \times 2}
 \end{displaymath}
 The multiplication of matrices satisfies the following \textbf{properties} : 
 \begin{enumerate}
@@ -328,12 +328,11 @@ The multiplication of matrices satisfies the following \textbf{properties} :
     \item \textbf{Associative} : $(AB)C = A(BC)$, whenever both sides of the equality are defined.
     \item \textbf{Distributive} : $A(B+C) = AB + AC$ and $(A+B)C = AC + BC$, whenever both sides of the equality are defined.
     \item \textbf{Multiplicative Identity} : For every square matrix $A$, there exists an Identity matrix of the same order such that $IA = AI = A$.
-    \item If the product of two matrices is a zero matrix, it is not necessary that one of the matrices has to be a zero matrix. That is, the product of two non-zero matrices can be a zero matrix. 
 \end{enumerate}
 
 \section{Transpose of a Matrix}
 \begin{displayquote}
-\textbf{Definition : Let $A$ be a $m$ x $n$ matrix, then the matrix obtained by interchanging the rows and columns of $A$ is called the transpose of $A$. That is $a_{ij} \rightarrow a_{ji}$ for all $i$ and $j$. This new $n$ x $m$ matrix is denoted by $A'$ or $A^T$}.
+\textbf{Definition : Let $A$ be a $m \times n$ matrix, then the matrix obtained by interchanging the rows and columns of $A$ is called the transpose of $A$. That is $a_{ij} \rightarrow a_{ji}$ for all $i$ and $j$. This new $n \times m$ matrix is denoted by $A'$ or $A^T$}.
 \end{displayquote}
 \textbf{For example}, \\
 If 
@@ -342,21 +341,21 @@ A = \begin{bmatrix}
 3 & 5\\
 \sqrt{3} & 1\\
 0 & -1
-\end{bmatrix}_{3 \textnormal{x} 2}
+\end{bmatrix}_{3 \times 2}
 \end{displaymath}
 Then
 \begin{displaymath}
 A' = \begin{bmatrix}
 3 & \sqrt{3} & 0\\
 5 & 1 & -1
-\end{bmatrix}_{2 \textnormal{x} 3}
+\end{bmatrix}_{2 \times 3}
 \end{displaymath}
 The transpose of matrices, satisfies the following \textbf{properties} :
 \begin{enumerate}
     \item $(A')' = A$
     \item $(kA)' = kA'$ (where $k$ is any constant)
     \item $(A + B)' = A' + B'$
-    \item $(AB) = B'A'$
+    \item $(AB)' = B'A'$
 \end{enumerate}
 
 \section{Symmetric and Skew Symmetric Matrices}
@@ -410,10 +409,10 @@ Hence Proved.
 \textbf{Any square matrix can be expressed as the sum of a symmetric and a skew-symmetric matrix.}
 \end{displayquote}
 \textbf{Proof :}\\
-Let $A$ be a square matrix, we can thus write $2A$ as - \\
-$= A + A$\\
-$= A + A + O$\\
-$= A + A + A' - A'$\\
+Let $A$ be a square matrix, we can thus write -\\
+$2A = A + A$\\
+$2A = A + A + O$\\
+$2A = A + A + A' - A'$\\
 $2A = (A+A') + (A-A')$\\
 $2A$ has been thus expressed as the sum of a symmetric and a skew-symmetric matrix and thus $A$ as well, can be simply written as - \\
 $ A = 1/2(A+A') + 1/2(A-A')$\\
@@ -445,20 +444,10 @@ A = \begin{bmatrix}
 We see that $AB = BA = I$. Thus $B$ is the inverse of $A$ and $A$ is the inverse of $B$, that is $A = B^{-1}$ and $B = A^{-1}$.\\
 The following points are to be noted regarding inverse of a matrix : 
 \begin{itemize}
-    \item A rectangular matrix does not possess inverse matrix. 
+    \item A rectangular matrix does not possess an inverse. 
     \item Inverse of a square matrix, if it exists, is unique.
     \item If $A$ and $B$ are invertible matrices of the same order, then $(AB)^{-1} = B^{-1}A^{-1}$.
 \end{itemize}
-
-\section{Additional Points}
-\begin{itemize}
-    \item The topic of matrix inverse will be dealt with in a better and more detailed manner in the Determinants chapter.
-    \item A matrix as we noticed, is just a way of arranging elements in a certain way. These elements can be coefficients of a linear equation, entire functions or even complex numbers.
-    \item As the operations on matrices(addition, multiplication, transpose, etc) and their corresponding properties show - What property will hold or not depends more on the constituent elements of a matrix.
-    \item At the same time, some properties will depend on the order of matrix as well, for example multiplication.
-    \item But all in all, the behavior of a matrix can best be gauged via the type of elements it contains. Meaning to say that a matrix with only real number entries will have certain set of properties, whereas a matrix with complex number entries can satisfy a different set of properties.
-\end{itemize}
-
 
 \section{References}
 \begin{itemize}
