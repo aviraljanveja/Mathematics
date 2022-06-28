@@ -1,0 +1,202 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{a4paper, total={6in,10in}}
+
+\usepackage{palatino}
+\fontfamily{ppl}\selectfont
+
+\usepackage{csquotes}
+\usepackage{amsmath}
+
+\usepackage{graphicx}
+\graphicspath{{images/}}
+
+\title{\textbf{\Huge Relations and Functions \\ Part 1}}
+\author{Aviral Janveja}
+\date{2022}
+
+
+\begin{document}
+
+\maketitle
+
+Much of the mathematics is about finding a pattern, a recognizable link between quantities that change. In this chapter, we will see how to link two sets and thus introduce \textbf{Relations} between them. We also learn about special relations which will qualify to be \textbf{Functions}. The concept of function is very important in mathematics since it captures the idea of a mathematically precise correlation between one quantity and another.
+
+
+\section{Cartesian Product of Sets}
+\begin{displayquote}
+\textbf{Definition : Given two non-empty sets A and B. The cartesian product $A \times B$ is the set of all ordered pairs of elements from A and B. Denoted as $A \times B = \{ (a,b): a \in A \ \textnormal{and} \ b \in B \}$. That is, the set of all ordered pairs $(a,b)$ and in that particular order, such that $a$ belongs to set $A$ and $b$ belongs to set $B$.}
+\end{displayquote}
+\textbf{For example},\\
+Suppose $A$ is a set of colors and $B$ is a set of objects : 
+\begin{displaymath}
+A = \{red, blue\} \textnormal{ and } B = \{bag, coat\}
+\end{displaymath}
+We see that four distinct ordered pairs can be obtained from the above sets : 
+\begin{displaymath}
+A \times B = \{(red,bag), (red, coat), (blue, bag), (blue, coat)\}
+\end{displaymath}
+
+\subsection{Remarks}
+\begin{itemize}
+    \item The order of pairing of elements is crucial. $(a,b)$ is not the same as $(b,a)$. That is why it is called an \textbf{ordered} pair.
+    \item Two ordered pairs are equal only if their corresponding first and second elements are equal.
+    \item If there are $p$ elements in set $A$ and $q$ elements in set $B$, then there will be $p.q$ elements in the set $A \times B$. That is, $n(A \times B) = p.q$
+    \item If either $A$ or $B$ is an empty set, then $A \times B$ will also be empty set.
+    \item If $A$ and $B$ are non-empty sets and either $A$ or $B$ is an infinite set, then so is $A \times B$.
+    \item $A \times A \times A = \{(a,b,c): a,b,c \in A\}$. Here $(a,b,c)$ is an ordered triplet.
+\end{itemize}
+
+\subsection{Example}
+If $P = \{0,1\}$, form the set $P\times P \times P$. \\
+$\Rightarrow$ Going step by first we can first calculate $P \times P$ \\
+$\Rightarrow$ $P \times P = \{(0,0), (0,1), (1,0), (1,1)\}$ \\
+$\Rightarrow$ And Therefore :
+\begin{displaymath}
+P \times P \times P = \{(0,0,0), (0,0,1), (0,1,0), (0,1,1), (1,0,0), (1,0,1), (1,1,0), (1,1,1)\}
+\end{displaymath}
+
+\subsection{Example}
+$\mathbf{R}$ is the set of real numbers, what do the cartesian products $\mathbf{R} \times \mathbf{R}$ and $\mathbf{R} \times \mathbf{R} \times \mathbf{R}$ represent ?\\
+$\Rightarrow$ The set $\mathbf{R}$ represents the points on a line.\\
+$\Rightarrow$ The set $\mathbf{R} \times \mathbf{R} = \{(x,y): x,y \in \mathbf{R}\}$ represents the coordinates of all the points in two-dimensional space.\\
+$\Rightarrow$ The set $\mathbf{R} \times \mathbf{R} \times \mathbf{R} = \{(x,y,z): x,y,z \in \mathbf{R}\}$ represents the coordinates of all the points in three-dimensional space.
+
+\subsection{Example}
+If $A \times B = \{(p,q),(p,r),(m,q),(m,r)\}$, find $A$ and $B$. \\
+$A$ = set of first elements = $\{p,m\}$\\
+$B$ = set of second elements = $\{q,r\}$
+
+\section{Relations}
+\begin{displayquote}
+\textbf{Definition : A relation $R$ from a non-empty set $A$ to a non-empty set $B$ is a subset of the cartesian product $A \times B$. This subset is obtained by describing a relationship between the first element and the second element of the ordered pairs in $A \times B$. The second element is called the  image of of the first element.\\
+The set of all first elements of the ordered pairs in relation $R$ is called the $domain$ of the relation and the set of all second elements is called the $range$ of the relation $R$. The whole set $B$ is called the codomain of the relation $R$.}
+\end{displayquote}
+\textbf{For example},\\
+ Consider a set $P = \{9,4,25\}$ and $Q = \{5,3,2,1,-2,-3,-5\}$\\
+ and the following relation $R = \{(x,y) : x = y^2, x \in P, y \in Q\}$\\
+The above relation $R$ which is a subset of $P \times Q$ can also be written as :\\
+$R = \{(9,3), (9,-3), (4,2), (4,-2), (25,5), (25,-5)\}$\\
+As per the definition, \\
+The domain of the above relation is $\{4,9,25\}$\\
+Whereas, the range of this relation is $\{-2,2,-3,3,-5,5\}$\\
+And of course, the set $Q$ is the co-domain of this relation.\\
+\textbf{Remark} : The above relation can also be visually represented using an arrow diagram representation. This can be seen in the reference text mentioned at the end of this chapter.
+
+\subsection{Note}
+\begin{displayquote}
+\textbf{The total number of relations that can be defined from a set $A$ to a set $B$ is obviously the number of possible subsets of $A \times B$.\\
+So, if $n(A) = p$ and $n(B) = q$, then $n(A \times B) = pq$. Then the total number of relations is $2^{pq}$.}
+\end{displayquote}
+\textbf{How come the number of relations or subsets is equal to $2^{pq}$ ?}\\
+Think of it in terms of binary digits. With one bit, we have two possible states - 0 \& 1. With two bits, we have 4 possible states - $(00,01,10,11)$ and similarly 8 states with 3 bits, 16 states with 4 bits and so on.\\
+The number of possible subsets for a set can be calculated in a similar fashion. For example, taking a set $A = \{2,3\}$, the subsets can be computed as follows : \\
+$\Rightarrow$ $00$ = A subset with neither first nor second element = $\{\emptyset\}$\\
+$\Rightarrow$ $01$ = A subset with only the second element = $\{3\}$\\
+$\Rightarrow$ $10$ = A subset with only the first element = $\{2\}$\\
+$\Rightarrow$ $11$ = A subset with both the elements = $\{2,3\}$\\
+The number of subsets for a set or in this context, the number of relations can be calculated in the way shown above.\\
+Thus, matching with the binary bits analogy above, when the set has only 1 element, we will have two possible subsets, for $n(A) = 2$, we will have 4 possible subsets, for $n(A) = 3$ we have 8 possible subsets and thereby : In general for any set $A$, with $n(A) = m$, we will have in total $2^m$ subsets or relations.
+
+\section{Functions}
+\begin{displayquote}
+\textbf{A relation from a set $A$ to a set $B$ is said to be a function if every element of set $A$ has one and only one image in set $B$. The function $f$ from set $A$ to set $B$ is defined as by $f : A \rightarrow B$ where $f(a) = b$ such that $a \in A$ and $b \in B$. Here, $b$ is called the image of $a$ under $f$.}
+\end{displayquote}
+In other words, a function $f$ is a special type of relation for which, the domain is set $A$ (every element in set $A$) and no two distinct ordered pairs $(a,b) \in f$ have the same first element (one and only one image in set $B$). The term \textbf{map} or \textbf{mapping} is sometimes used to denote a function.
+
+
+\subsection{Example}
+$\mathbf{N}$ is the set of natural numbers. A relation $R$ is defined on $\mathbf{N}$ such that $R = \{(x,y) : y=2x \textnormal{ where } x,y \in \mathbf{N}\}$\\
+\textbf{Question} : What is the domain, codomain and range of $R$ ? Is this relation a function ?\\
+\textbf{Solution} : The Domain of $R$ is the set of natural numbers. The codomain is naturally also $\mathbf{N}$. The range is the set of even natural numbers.\\
+Since every natural number has one and only one image as per the defined relation, therefore this relation is a function.\\
+\textbf{Note} : A $function$ whose $range$ is real valued is called a $real$ $valued$ $function$. Further, if its $domain$ is also real valued, it is called a $real$ $function$.
+
+\section{Some Common Functions}
+
+\subsection{Identity Function}
+Let $\mathbf{R}$ be the set of real numbers. The identity function is defined as $f : \mathbf{R} \rightarrow \mathbf{R}$, where $y = f(x) = x$ for each $x \in \mathbf{R}$. The $domain$ and $range$ of $f$ are $\mathbf{R}$.
+
+\subsection{Constant Function}
+The constant function is defined as $f : \mathbf{R} \rightarrow \mathbf{R}$, where $y = f(x) = c$ and $c$ is a constant. Here the $domain$ of $f$ is $\mathbf{R}$ and its $range$ is $\{c\}$.
+
+\subsection{Polynomial Function}
+A function $f : \mathbf{R} \rightarrow \mathbf{R}$ is said to be a polynomial function defined as $y = f(x) = a_0 + a_1x + a_2x^2 + ... + a_nx^n$, where $n$ is a non-negative integer and $a_0, a_1, a_2...a_n \in \mathbf{R}$.                
+
+\subsection{Rational Function}
+These are functions of the type $\frac{f(x)}{g(x)}$, where $f(x)$ and $g(x)$ are polynomial functions of $x$ defined in a domain, where $g(x) \neq 0$.\\
+\textbf{For example}, consider the real valued function $f : \mathbf{R} - \{0\} \rightarrow \mathbf{R}$ defined by : 
+\begin{displaymath}
+f(x) = \frac{1}{x}
+\end{displaymath}
+
+\subsection{Modulus Function}
+The function $f : \mathbf{R} \rightarrow \mathbf{R}$ denoted by $f(x) = |x|$ is called the modulus function. It is defined as : 
+\begin{displaymath}
+|x| = \begin{cases}
+x & \text{if } x \geq 0 \\
+-x & \text{if } x < 0
+\end{cases}
+\end{displaymath}
+The domain of the modulus function is the set of real numbers $\mathbf{R}$, whereas the range is the set of all non-negative real numbers.
+
+\section{Algebra of Real Functions}
+\begin{enumerate}
+    \item \textbf{Addition} : Let $f$ and $g$ be two functions, then we define $(f+g) (x) = f(x) + g(x)$
+    \item \textbf{Subtraction} : Let $f$ and $g$ be two functions, then we define $(f-g) (x) = f(x) - g(x)$
+    \item \textbf{Multiplication by Scalar} : Let $f$ be a function and $\alpha$ be a real number. Then we define $(\alpha f)(x) = \alpha f(x)$
+    \item \textbf{Multiplication} : Let $f$ and $g$ be two functions, then we define $(f.g) (x) = f(x) . g(x)$
+    \item \textbf{Quotient} : Let $f$ and $g$ be two functions, then quotient $f$ by $g$ is defined by $\frac{f}{g}(x) = \frac{f(x)}{g(x)}$, provided $g(x) \neq 0$.
+\end{enumerate}
+
+\section{Examples}
+\subsection{Example 1}
+Let $f(x) = x^2$ and $g(x) = 2x+1$ \\
+Find : $(f+g)(x)$, $(f-g)(x)$, $(f.g)(x)$ and $\frac{f}{g}(x)$\\
+\textbf{Solution} :\\
+$(f+g) (x) = f(x) + g(x) = x^2 + 2x + 1$ \\
+$(f-g) (x) = f(x) - g(x) = x^2 - 2x -1$ \\
+$(f.g) (x) = f(x) . g(x) = 2x^3 + x^2$ \\
+$\frac{f}{g}(x) = \frac{f(x)}{g(x)} = \frac{x^2}{2x+1}$, $x \neq -1/2$
+
+\subsection{Example 2}
+Let $R$ be a relation on the set of rational numbers $\mathbf{Q}$ defined by : 
+\begin{displaymath}
+R = \{(a,b) : a-b \in \mathbf{Z} \textnormal{ where }a,b \in \mathbf{Q}\}
+\end{displaymath}
+Show that : 
+\begin{enumerate}
+    \item $(a,a) \in R$ for all $a \in \mathbf{Q}$
+    \item $(a,b) \in R$ implies that $(b,a) \in R$
+    \item $(a,b) \in R$ and $(b,c) \in R$ implies that $(a,c) \in R$
+\end{enumerate}
+Solution : 
+\begin{enumerate}
+    \item For any rational number $a$, $a-a = 0$, which is obviously an integer. Therefore, it follows that $(a,a) \in R$ for all $a \in \mathbf{Q}$
+    \item $(a,b) \in R$ implies that $a-b \in \mathbf{Z}$. So, If $a-b$ is an integer then it follows naturally that $b-a$ which is simply $-(a-b)$ is an integer as well. Therefore $(b,a) \in R$
+    \item $(a,b) \in R$ and $(b,c) \in R$ implies that $a-b \in \mathbf{Z}$ and $b-c \in \mathbf{Z}$. The sum of two integers will be an integer as well. Adding the two $(a-b) + (b-c) = a-c \in \mathbf{Z}$. Therefore, $(a,c) \in R$  
+\end{enumerate}
+
+\subsection{Example 3}
+Let $f = \{(1,1), (2,3), (0,-1), (-1,-3)\}$ be a linear function on the set of integers $\mathbf{Z}$, then find $f(x)$.\\
+\textbf{Solution} : Since $f$ is a linear function. Linear functions by definition are of the form : 
+\begin{displaymath}
+f(x) = mx + c
+\end{displaymath}
+Also since $(1,1) \in f$ and $(0,-1) \in f$ , we have 
+\begin{displaymath}
+f(1) = 1 = m + c
+\end{displaymath}
+\begin{displaymath}
+f(0) = -1 = c
+\end{displaymath}
+Solving the two equations, we get $m = 2$, $c = -1$ and thus $f(x) = 2x-1$  
+
+\section{References}
+\begin{itemize}
+    \item Mathematics - Class 11, Chapter 2 - Relations and Functions. NCERT Textbook India, version 2020-21. As per National Curriculum Framework 2005.
+\end{itemize}
+
+\end{document}
