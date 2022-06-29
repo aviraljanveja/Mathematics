@@ -11,5 +11,6 @@ Each chapter generally consists of the following structure :
  - Followed by Simple Examples
  - Related Properties, Points & Notes if any
  - Some Solved Exercises
+ - Reference Sources
 
-Disclaimer : These are my notes. They are based on Indian NCERT math text books, classes 9 to 12.
+Disclaimer : These are my math notes, primarily based on Indian NCERT math text books, classes 9 to 12.
