@@ -6,7 +6,7 @@ These concepts are a prerequisite for understanding several advanced topics in c
  
 Each chapter generally consists of the following structure : 
  - Topic
- - Sub Topic
+ - Sub-Topic
  - Definition in Simple English
  - Followed by Simple Examples
  - Related Properties, Points & Notes if any
