@@ -1,8 +1,8 @@
 # Mathematical Foundations
 
-All those foundational Math topics that we usually learn in high school or bachlelor's and forget thereafter ;)
+All those foundational math concepts that we usually learn in high school or bachlelor's and forget thereafter.
 
-These are necessary for understanding various topics in Computer Science like Algorithms, Complexity Theory, Machine Learning, Quantum Computing and so on.
+These concepts are a prerequisite for understanding several advanced topics in computer science like quantum computing, machine learning, algorithms, complexity theory and so on.
  
 Each chapter generally consists of the following structure : 
  - Topic
@@ -10,7 +10,7 @@ Each chapter generally consists of the following structure :
  - Definition in Simple English
  - Followed by Simple Examples
  - Related Properties, Points & Notes if any
- - Some Solved Exercises
- - Reference Sources
+ - Ending with some Solved Exercises
+ - and Reference Sources
 
 Disclaimer : These are my math notes, primarily based on Indian NCERT math text books, classes 9 to 12.
