@@ -83,26 +83,30 @@ As per the definition, \\
 The domain of the above relation is $\{4,9,25\}$\\
 Whereas, the range of this relation is $\{-2,2,-3,3,-5,5\}$\\
 And of course, the set $Q$ is the co-domain of this relation.\\
-\textbf{Remark} : The above relation can also be visually represented using an arrow diagram representation. This can be seen in the reference text mentioned at the end of this chapter.
+\textbf{Remark} : 
+\begin{enumerate}
+    \item A relation $R$ from set $A$ to $A$ is also stated in short as a ``relation on set $A$" or a ``relation in set $A$".
+    \item A relation is essentially a certain set. Therefore just like any set, it may be represented by the roster or the set builder method.
+    \item Visually, an arrow diagram can be used to represent a relation. As shown in the reference text 1.
+\end{enumerate}
 
 \subsection{Note}
 \begin{displayquote}
 \textbf{The total number of relations that can be defined from a set $A$ to a set $B$ is obviously the number of possible subsets of $A \times B$.\\
 So, if $n(A) = p$ and $n(B) = q$, then $n(A \times B) = pq$. Then the total number of relations is $2^{pq}$.}
 \end{displayquote}
-\textbf{How come the number of relations or subsets is equal to $2^{pq}$ ?}\\
+\textbf{How come the number of relations or subsets is equal to $2^{pq}$ and how to write down these subsets ?}\\
 Think of it in terms of binary digits. With one bit, we have two possible states - 0 \& 1. With two bits, we have 4 possible states - $(00,01,10,11)$ and similarly 8 states with 3 bits, 16 states with 4 bits and so on.\\
-The number of possible subsets for a set can be calculated in a similar fashion. For example, taking a set $A = \{2,3\}$, the subsets can be computed as follows : \\
+The number of possible subsets for a set can be calculated in a similar fashion. For example, taking a set $A = \{2,3\}$ with two elements, the subsets can be computed as follows : \\
 $\Rightarrow$ $00$ = A subset with neither first nor second element = $\{\emptyset\}$\\
 $\Rightarrow$ $01$ = A subset with only the second element = $\{3\}$\\
 $\Rightarrow$ $10$ = A subset with only the first element = $\{2\}$\\
 $\Rightarrow$ $11$ = A subset with both the elements = $\{2,3\}$\\
-The number of subsets for a set or in this context, the number of relations can be calculated in the way shown above.\\
-Thus, matching with the binary bits analogy above, when the set has only 1 element, we will have two possible subsets, for $n(A) = 2$, we will have 4 possible subsets, for $n(A) = 3$ we have 8 possible subsets and thereby : In general for any set $A$, with $n(A) = m$, we will have in total $2^m$ subsets or relations.
+In general for any set $A$, with $n(A) = m$, we will have in total $2^m$ subsets or relations. The set containing all the $2^m$ subsets of $A$ is obviously called the \textbf{power set} of $A$ as seen in the chapter on sets. Finally, these subsets can be written down using bit analogy way shown above.
 
 \section{Functions}
 \begin{displayquote}
-\textbf{A relation from a set $A$ to a set $B$ is said to be a function if every element of set $A$ has one and only one image in set $B$. The function $f$ from set $A$ to set $B$ is defined as by $f : A \rightarrow B$ where $f(a) = b$ such that $a \in A$ and $b \in B$. Here, $b$ is called the image of $a$ under $f$.}
+\textbf{A relation from a set $A$ to a set $B$ is said to be a function if every element of set $A$ has one and only one image in set $B$. The function $f$ from set $A$ to set $B$ is denoted by $f : A \rightarrow B$ where $f(a) = b$ such that $a \in A$ and $b \in B$. Here, $b$ is called the image of $a$ under $f$.}
 \end{displayquote}
 In other words, a function $f$ is a special type of relation for which, the domain is set $A$ (every element in set $A$) and no two distinct ordered pairs $(a,b) \in f$ have the same first element (one and only one image in set $B$). The term \textbf{map} or \textbf{mapping} is sometimes used to denote a function.
 
@@ -185,14 +189,14 @@ Let $f = \{(1,1), (2,3), (0,-1), (-1,-3)\}$ be a linear function on the set of i
 \begin{displaymath}
 f(x) = mx + c
 \end{displaymath}
-Where $m$ and $c$ are constants. Also since $(1,1) \in f$ and $(0,-1) \in f$ , we have 
+Where $m$ and $c$ are constants. Also since $(1,1) \in f$ and $(0,-1) \in f$ , substituting these values $(x,y)$ in $y = f(x)$ we have 
 \begin{displaymath}
-f(1) = 1 = m + c
+1 = f(1) = m(1) + c
 \end{displaymath}
 \begin{displaymath}
-f(0) = -1 = c
+-1 = f(0) = m(0) + c
 \end{displaymath}
-Solving the two equations, we get $m = 2$, $c = -1$ and thus : 
+Solving the two equations $(1 = m + c)$ and $(-1 = c)$ from above, we get $m = 2$, $c = -1$ and thus $f(x)$ is found : 
 \begin{displaymath}
 f(x) = 2x-1
 \end{displaymath}  
