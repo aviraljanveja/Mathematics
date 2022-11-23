@@ -8,8 +8,11 @@
 \fontfamily{ppl}\selectfont
 
 \usepackage{csquotes}
+
 \usepackage{amsmath}
+
 \usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 
 \usepackage{graphicx}
 \graphicspath{{images/}}
@@ -18,23 +21,23 @@
 \author{Aviral Janveja}
 \date{2022}
 
-
 \pgfplotsset{compat=1.18}
-\begin{document}
 
+\begin{document}
 \maketitle
   
 Everyday we come across a lot of information in the form of \textbf{facts, figures, tables \& graphs}. These facts or figures, which may be numerical or otherwise, when collected with a definite purpose are called \textbf{data}.\\
-Today, we live in an information oriented society and every part of our lives utilizes data in one form or another. So it becomes essential for us to know how to extract meaningful \textbf{information} from such data.\\
-This extraction of meaningful information is studied in the branch of mathematics called \textbf{statistics}. Statistics deals with collection, organization, presentation, interpretation, analysis of data, as well as drawing of meaningful conclusions from the data.
+Every part of our lives utilizes data in one form or another. So it becomes essential for us to know, how to extract meaningful \textbf{information} from such data.\\
+This extraction of meaningful information, is studied in the branch of mathematics called \textbf{statistics}. Statistics deals with collection, organization, presentation, analysis and interpretation of data.
 
 \section{Collection of Data}
 \subsection{Primary Data}
-When data is collected by the investigator themselves for a defined objective, the data obtained is called primary data.
+The data, when collected by the investigators themselves
+for a defined objective, is called primary data.
 
 \subsection{Secondary Data}
-However, when the data is gathered from another source which already had the data collected beforehand, then it is called secondary data.\\
-Such data, which has been collected by someone else, possibly in another context, needs to be used with great care ensuring that the source is reliable and relevant towards our objective.
+However, when gathered from another source which already had the data collected beforehand, then it is called secondary data.\\
+Such data, which has been collected by someone else, possibly in a different context, needs to be used with great care, ensuring that the source is reliable and relevant towards our objective.
 
 
 \section{Presentation of Data}
@@ -112,58 +115,89 @@ Thereby, the data above can be condensed into tabular form as follows :
 \end{center}
 The above is called a grouped frequency distribution table. Presenting data in this form simplifies and condenses data and enables us to observe certain important features at a glance.\\
 For instance, in the above table we can easily observe that 50 or more plants survived in 8+18+10+23+12 = 71 schools.\\
-\textbf{Note} : You can chose the class-size as per the range and type of data. There is no hard and fast rule about the size of classes, just that they should not overlap.
+\textbf{Note} : You can chose the class-size as per the range and type of data. There is no hard and fast rule about that, just that the classes should not overlap.
 
 
 \section{Graphical Representation of Data}
-In the previous section, we discussed the representation of data by tables. Now let us turn to another representation, that is graphical representation.\\
-It is well said that ``a picture is better than a thousand words". Usually, comparisons among individual items are best shown by means of graphs. Here, we shall study the following graphical representations : 
-\begin{itemize}
-    \item Bar Graphs
-    \item Histogram
-    \item Frequency Polygon
-\end{itemize}
-\subsection{Bar Graphs}
-Let us take example of a family with monthly income of INR 20,000. They have planned
-the following expenditures per month : 
+It is well said that ``a picture is worth a thousand words". Bar Graphs, Histograms and Frequency Polygons are some basic types of graphs which are used to represent data. Various other graphical and visual representations are possible as per the given context and situation.\\
+They are especially useful when comparing two different sets of data. For example, comparing the performance of two different classes in a school.
+
+\section{Measures of Central Tendency}
+After looking at collection and presentation of data in previous sections. Let us now look at how to efficiently analyse data. \\
+The question is - Do we always need to study the entire data to make sense of it, or can we find out some important features by looking at certain representatives of the data ? \\
+This is possible, by using the \textbf{measures of central tendency}. A measure of central tendency is a single value that attempts to represent a set of data by identifying the central position within that data-set. The most common measures of central tendency are the \textbf{mean}, the \textbf{median} and the \textbf{mode}.\\
+In order to understand this better, let us take an \textbf{example} of two students Shreyas and Siddharth. They obtained the following marks out of 10 across 5 tests : 
 \begin{center}
 \begin{tabular}{ |c|c| } 
  \hline
- \textbf{Purpose} & \textbf{Expenditure} \\
+ \textbf{Shreyas} & \textbf{Siddharth} \\
  \hline
- Grocery & 4000 \\ 
- Rent & 5000 \\
- Education & 5000 \\
- Medicine & 2000 \\
- Fuel & 2000 \\
- Entertainment & 1000 \\
- Other & 1000 \\
+ 7 & 4 \\ 
+ 8 & 7 \\
+ 8 & 10 \\
+ 9 & 10 \\
+ 10 & 10 \\
  \hline
 \end{tabular}
 \end{center}
-We shall now draw the bar graph for the above data in the following steps : 
-\begin{itemize}
-    \item We indicate the $purpose$ on the horizontal axis. Since there is no numerical values for purpose, we take a uniform one unit per item of purpose.
-    \item Secondly, we represent the $expenditure$ values on the vertical axis. Here, we can suitably take 1 unit = INR 1000.
-    \item Now, using the above table data, we plot a graph with rectangular bars leaving a gap of 1 unit between two bars.
-\end{itemize}
+Who had a better performance of the two ? We will try and answer that by using the three measures of central tendency.
 
+\subsection{Mean}
+The mean of a number of observations is the sum of all observations divided by the number of observations. It is denoted by $\Bar{x}$, read as ``x bar".
+\begin{displaymath}
+    \Bar{x} = \frac{\text{Sum of Observations}}{\text{Number of Observations}}
+\end{displaymath}
+Hence, Shreyas' mean is :
+\begin{displaymath}
+    \frac{7+8+8+9+10}{5} = 8.4
+\end{displaymath}
+Similarly, Siddharth's mean :
+\begin{displaymath}
+    \frac{4+7+10+10+10}{5} = 8.2
+\end{displaymath}
+The mean seems to indicate that Shreyas performed better as he has a higher mean score. However, let us look at what the other two measures have to say.
+
+\subsection{Median}
+The median is the middle most observation of the data, which divides the data into exactly two parts. We calculate the median as follows : 
+\begin{itemize}
+    \item First the data is arranged in ascending (or descending) order.
+    \item If the number of observations is odd, then $(\frac{n+1}{2})^{th}$ observation is the median.
+    \item If the number of observations is even, then median is the mean of $(\frac{n}{2})^{th}$ and $(\frac{n}{2}+1)^{th}$ observations.
+\end{itemize}
+ Therefore, the median mark for Shreyas is 8, whereas the median for Siddharth is 10. The median suggests that Siddharth's performance should be rated better.
+
+ \subsection{Mode}
+The mode is that observation which occurs most frequently.\\
+In Shreyas' case the mode would therefore be 8. Whereas, Siddharth's mode is 10.\\
+Looking at all the 3 measures for Shreyas and Siddharth together :
 \begin{center}
-\begin{tikzpicture}
-\begin{axis}[
-    symbolic x coords={Grocery,Rent,Education,Medicine,Fuel,Entertainment,Other},
-    xtick=data]
-    \addplot[ybar,fill=blue] coordinates {
-        (Grocery,4000)
-        (Rent,5000)
-        (Education,5000)
-        (Medicine,2000)
-        (Fuel,2000)
-        (Entertainment,1000)
-        (Other,1000)
-    };
-\end{axis}
-\end{tikzpicture}
+\begin{tabular}{ |c|c|c| } 
+ \hline
+ \textbf{Measures of central tendency} & \textbf{Shreyas} & \textbf{Siddharth} \\
+ \hline
+ Mean & 8.4 & 8.2 \\ 
+ Median & 8 & 10 \\
+ Mode & 8 & 10 \\
+ \hline
+\end{tabular}
 \end{center}
+We see that these measures of central tendency are not sufficient for concluding which student is better. We require some more information to conclude this, which will be studied in further chapters on statistics.
+
+\section{Solved Exercises}
+\textbf{Question :} Consider a small factory of 5 employees. One Supervisor and four labourers. The labourers draw a salary of 5000 rupees per month while the supervisor gets 15000 per month. Calculate the mean, median and mode of the salaries.\\
+\textbf{Answer :} Mean is : 
+\begin{displaymath}
+    \frac{5000+5000+5000+5000+15000}{5} = 7000
+\end{displaymath}
+The median salary is 5000, the mode is 5000 as well as it occurs the maximum number of times.\\
+It is interesting to observe here that the mean salary doesn't give an accurate estimate of any of their salaries, while the median and mode represent the data more effectively. \textbf{Note} that extreme values in the data affect the mean. This is one of the weaknesses of the mean. Median and mode give a better estimate of the average in such situations.
+
+\section{References}
+\begin{enumerate}
+    \item Class 9 - Chapter 14 : Statistics.\\ 
+    NCERT Mathematics Textbook, Version 2020-21.\\
+    As per Indian National Curriculum Framework 2005.
+\end{enumerate}
+
 
 \end{document}
