@@ -8,5 +8,3 @@ Each chapter generally consists of the following :
  - Related points and notes if any.
  - Some solved exercises.
  - Reference sources.
-
-These are my math notes, primarily based on Indian NCERT math text books, classes 9 to 12.
