@@ -4,7 +4,7 @@ Fundamental math concepts that we usually learn in school or bachlelors and forg
  
 Each chapter generally consists of the following : 
  - Concepts explained through simple examples.
- - Definition in simple terms.
+ - Definitions in simple terms.
  - Related points and notes if any.
  - Some solved exercises.
  - Reference sources.
