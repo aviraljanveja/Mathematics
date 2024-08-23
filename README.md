@@ -1,4 +1,4 @@
-This is a course on fundamental math topics that are a prerequisite for understanding several advanced topics in computer science like machine learning, algorithm design and quantum computing. 
+This course covers fundamental math concepts that are prerequisites for understanding several advanced topics in computer science, such as machine learning, algorithm design and quantum computing.
  
 Each chapter generally consists of the following format : 
  - Concepts explained through simple examples.
@@ -6,6 +6,6 @@ Each chapter generally consists of the following format :
  - Related points and notes, if any.
  - Some solved exercises.
 
-The reference materials used in the development of this course majorly include NCERT Mathematics textbooks from India, standard 9 to 12.
+The reference materials used in the development of this course primarily include Indian NCERT mathematics textbooks.
 
--- Developed by Aviral Janveja (Copyright 2024)
+-- Developed by Aviral Janveja for the Panini AI initiative. (Copyright 2024)
