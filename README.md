@@ -1,4 +1,4 @@
-This course covers fundamental math concepts that are prerequisites for understanding several advanced topics in computer science, such as machine learning, algorithm design and quantum computing.
+This course covers fundamental math concepts that are required for understanding several advanced topics in computer science, such as machine learning, algorithm design and quantum computing.
  
 Each chapter generally consists of the following format : 
  - Concepts explained through simple examples.
