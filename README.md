@@ -8,4 +8,4 @@ Each chapter generally consists of the following format :
 
 The reference materials used in the development of this course primarily include Indian NCERT mathematics textbooks.
 
--- Developed by Aviral Janveja for the Panini AI initiative. (Copyright 2024)
+-- Developed by Aviral Janveja for the Paanini AI initiative. (Copyright 2024)
