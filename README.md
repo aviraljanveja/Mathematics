@@ -7,5 +7,3 @@ Each chapter generally consists of the following format :
  - Some solved exercises.
 
 The reference materials used in the development of this course primarily include Indian NCERT mathematics textbooks.
-
--- Developed by Aviral Janveja for Paanini AI Labs. (Copyright 2025)
