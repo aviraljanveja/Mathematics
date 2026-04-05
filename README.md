@@ -6,4 +6,4 @@ Each chapter generally consists of the following format :
  - Related points and notes, if any.
  - Some solved exercises.
 
-The reference materials used in the development of this course primarily include Indian NCERT mathematics textbooks.
+The reference materials used in the development of these chapters primarily include Indian NCERT mathematics textbooks.
